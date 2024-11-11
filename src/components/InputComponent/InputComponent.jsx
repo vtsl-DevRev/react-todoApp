@@ -10,7 +10,6 @@ const InputComponent = () => {
     const [todosInProgress, setTodosInProgress] = useState(JSON.parse(localStorage.getItem('todosInProgress')) || []);
     const [todosCompleted, setTodosCompleted] = useState(JSON.parse(localStorage.getItem('todosCompleted')) || []);
     const [search, setSearch] = useState('');
-    const [highlightedTodo, setHighlightedTodo] = useState(null);
 
     const addTodo = (e) => {
         e.preventDefault();
@@ -83,7 +82,7 @@ const InputComponent = () => {
                     todoElement.style.backgroundColor = 'white';
                 });
             }, 5000);
-            
+
         } else {
             alert('No match found!');
         }

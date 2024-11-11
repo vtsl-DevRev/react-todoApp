@@ -1,44 +1,57 @@
+#listContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 #pending,
 #inProgress,
 #completed {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  width: 100%;
-  max-width: 600px;
+  width: 32%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 #pending h2,
 #inProgress h2,
 #completed h2 {
   color: #5c6bc0;
+  margin-bottom: 10px;
 }
 
 button {
   background-color: #f44336;
   padding: 8px 16px;
   margin-top: 10px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 button:hover {
   background-color: #d32f2f;
 }
 
-@media (max-width: 768px) {
-  #listContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-
+@media (max-width: 1024px) {
   #pending,
   #inProgress,
   #completed {
-    width: 90%;
-    max-width: 500px;
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  #pending,
+  #inProgress,
+  #completed {
+    width: 100%;
     margin-bottom: 20px;
   }
 }
