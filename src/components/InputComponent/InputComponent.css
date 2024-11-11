@@ -1,0 +1,54 @@
+#mainComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 30px;
+}
+
+#inputForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+#inputForm form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+#inputForm input {
+  padding: 10px;
+  width: 580px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+#inputForm button {
+  padding: 10px 15px;
+  background-color: #388e3c;
+  border-radius: 5px;
+}
+
+#search input {
+  margin-left: 30px;
+  width: 290px;
+}
+
+#search button {
+  padding: 10px 15px;
+  background-color: skyblue;
+  border-radius: 5px;
+}
+
+#listContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}

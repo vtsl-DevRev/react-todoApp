@@ -1,0 +1,44 @@
+#pending,
+#inProgress,
+#completed {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#pending h2,
+#inProgress h2,
+#completed h2 {
+  color: #5c6bc0;
+}
+
+button {
+  background-color: #f44336;
+  padding: 8px 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  #listContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pending,
+  #inProgress,
+  #completed {
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,67 @@
+.cardComponent {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardComponent p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: 300;
+    color: #333;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardComponent button {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    width: 120px;
+}
+
+.cardComponent button:hover {
+    transform: scale(1.05);
+}
+
+.cardComponent button#progerssBtn {
+    background-color: #2196f3;
+    color: white;
+}
+
+.cardComponent button#completedBtn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.cardComponent button#pendingBtn {
+    background-color: #ff9800;
+    color: white;
+}
+
+.cardComponent button#deleteBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+.cardComponent button#editBtn {
+    background-color: #ffeb3b;
+    color: black;
+}
+
+.cardComponent button:nth-child(4):hover {
+    background-color: #d32f2f;
+}

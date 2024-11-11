@@ -1,0 +1,11 @@
+#titleComponent {
+    background-color: #5c6bc0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #titleComponent h1 {
+    color: white;
+    font-size: 2rem;
+  }
+  
