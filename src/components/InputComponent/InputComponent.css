@@ -53,3 +53,31 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+
+:modal {
+  background-color: #f5f5dc; /* More readable color code */
+  border: 2px solid #deb887; /* Hex code for consistency */
+  border-radius: 12px; /* Slightly more rounded for a softer look */
+  padding: 20px;
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Limits max width for larger screens */
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  display: flex;
+  flex-direction: column; /* Better control for modal content */
+  align-items: center; /* Center content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+#confirmButtons {
+  justify-content: center;
+  display: flex;
+}
+
+#cancelDelete {
+  margin-right: 10px;
+  background-color: #388e3c;
+}
